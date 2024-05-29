@@ -19,10 +19,10 @@ public class Multiplication extends Operation {
     /*
      * retourne la multiplication des operandes
      */
-    public int valeur() 
+    public double valeur() 
     {
-        int a=super.getOperande1();
-        int b=super.getOperande2();
+        double a=super.getOperande1().valeur();
+        double b=super.getOperande2().valeur();
         return a * b;
     }
 
