@@ -11,7 +11,7 @@ public class Nombre extends Expression{
         this.valeurNombre= nombre;
     }
 
-    public int valeur()
+    public double valeur()
     {
         return this.valeurNombre;
     }
