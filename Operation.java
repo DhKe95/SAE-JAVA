@@ -11,7 +11,7 @@ public abstract class Operation extends Expression{
         this.Operande2= valeur2;
     }
 
-    public abstract int valeur();
+    public abstract double valeur();
 
     public int getOperande1()
     {
