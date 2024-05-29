@@ -5,7 +5,7 @@ public class Addition extends Operation
      */
     public Addition()
     {
-        super();
+        super()
     }
 
     /*
