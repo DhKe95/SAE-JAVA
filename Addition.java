@@ -11,7 +11,7 @@ public class Addition extends Operation
     /*
      * Constructeur champs à champs
      */
-    public Addition(Nombre valeur1,Nombre valeur2)
+    public Addition(Expression valeur1,Expression valeur2)
     {
         super(valeur1, valeur2);
     }
