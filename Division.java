@@ -11,10 +11,10 @@ public class Division extends Operation{
     /*
      * Constructeur champs à champs
      */
-    public Division(Nombre valeur1,Nombre valeur2) throws Exception
+    public Division(Expression valeur1,Expression valeur2) throws Exception
     {
         super(valeur1, valeur2);
-        if (super.getOperande2() == 0){
+        if (super.getOperande2().valeur() != 0){
             throw new ArithmeticException("Ne peut pas diviser par un dénominateur null");
         }
     }
@@ -22,12 +22,12 @@ public class Division extends Operation{
     /*
      * retourne la division des operandes
      */
-    public int valeur() 
+    public double valeur() 
     {
-        int a=super.getOperande1();
-        int b=super.getOperande2();
-        int res= a / b;
-        return res;
+        double a= super.getOperande1().valeur();
+        double b= super.getOperande2().valeur();
+
+        return a/b ;
     }
 
     /*
@@ -38,4 +38,3 @@ public class Division extends Operation{
         return "(" + super.getOperande1() + " / " + super.getOperande2() + ")" ;
     }
 }
-
