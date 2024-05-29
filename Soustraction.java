@@ -11,7 +11,7 @@ public class Soustraction extends Operation{
     /*
      * Constructeur champs à champs
      */
-    public Soustraction(Nombre valeur1,Nombre valeur2)
+    public Soustraction(Expression valeur1,Expression valeur2)
     {
         super(valeur1, valeur2);
     }
