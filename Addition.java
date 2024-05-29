@@ -19,11 +19,9 @@ public class Addition extends Operation
     /*
      * retourne l'addition des operandes
      */
-    public int valeur() 
+    public double valeur() 
     {
-        int a=super.getOperande1();
-        int b=super.getOperande2();
-        return a + b;
+        return super.getOperande1().valeur() + super.getOperande2().valeur();
     }
 
     /*
@@ -34,5 +32,6 @@ public class Addition extends Operation
         return "(" + super.getOperande1() + " + " + super.getOperande2() + ")" ;    
     }
 }
+
 
 
