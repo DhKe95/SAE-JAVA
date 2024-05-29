@@ -11,7 +11,7 @@ public class Multiplication extends Operation {
     /*
      * Constructeur champs à champs
      */
-    public Multiplication(Nombre valeur1,Nombre valeur2)
+    public Multiplication(Expression valeur1,Expression valeur2)
     {
         super(valeur1, valeur2);
     }
