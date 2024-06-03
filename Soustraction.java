@@ -21,9 +21,9 @@ public class Soustraction extends Operation{
      */
     public double valeur() 
     {
-        double a =super.getOperande1().valeur()
-        double b =super.getOperande2().valeur()
-        return a-b
+        double a =super.getOperande1().valeur();
+        double b =super.getOperande2().valeur();
+        return a-b;
     }
 
     /*
