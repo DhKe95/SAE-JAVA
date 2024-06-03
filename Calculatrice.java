@@ -8,7 +8,7 @@ public class Calculatrice {
         Expression s = new Soustraction(dixSept, deux) ;
         Expression a = new Addition(deux, trois) ;
         try{
-            Expression d = new Division(s, a) ;; // doit afficher une erreur
+            Expression d = new Division(s, a) ; // doit afficher une erreur
             System.out.println(d + " = " + d.valeur()) ; // affiche ((17 - 2) / (2 + 3)) = 3
             }
             catch(Exception er)
