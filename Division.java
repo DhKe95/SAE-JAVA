@@ -14,7 +14,7 @@ public class Division extends Operation{
     public Division(Expression valeur1,Expression valeur2) throws Exception
     {
         super(valeur1, valeur2);
-        if (super.getOperande2().valeur() != 0){
+        if (super.getOperande2().valeur() == 0){
             throw new ArithmeticException("Ne peut pas diviser par un dénominateur null");
         }
     }
