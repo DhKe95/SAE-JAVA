@@ -19,7 +19,7 @@ public class Nombre extends Expression{
 
     public String toString()
     {
-        return "Le nombre est" + this.valeur() + "\n";
+        return " " + this.valeur() + " ";
     }
 }
 
