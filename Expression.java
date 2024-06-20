@@ -4,7 +4,7 @@ public abstract class Expression{
     */
 
     /*
-     * Méthode abstraite abstraite
+     * Méthode abstraite 
      */
     public abstract double valeur();
 }
