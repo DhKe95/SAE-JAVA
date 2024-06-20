@@ -2,11 +2,22 @@ public class Calculatrice {
     public static void main(String[] args) throws Exception {
         System.out.println("début du programme");
 
+        /*
+         * Déclaratuion de variable
+         */
         Expression deux = new Nombre(2) ;
         Expression trois = new Nombre(3) ;
         Expression dixSept = new Nombre(17) ;
+
+        /*
+         * Définition des expressions
+         */
         Expression s = new Soustraction(dixSept, deux) ;
         Expression a = new Addition(deux, trois) ;
+
+        /*
+         * Calcul final
+         */
         try{
             Expression d = new Division(s, a) ; // doit afficher une erreur
             System.out.println(d + " = " + d.valeur()) ; // affiche ((17 - 2) / (2 + 3)) = 3
