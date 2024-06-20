@@ -21,9 +21,9 @@ public class Addition extends Operation
      */
     public double valeur() 
     {
-        double a =super.getOperande1().valeur();
-        double b =super.getOperande2().valeur();
-        return a+b;
+        double expression1 =super.getOperande1().valeur();
+        double expression2 =super.getOperande2().valeur();
+        return expression1 + expression2;
     }
 
     /*
